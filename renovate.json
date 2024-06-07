@@ -18,10 +18,10 @@
   "packageRules": [
     {
       "matchFileNames": ["regex-version.txt"],
-      "constraintsFiltering": "strict"
+      "constraintsFiltering": "strict",
+      "constraints": {
+        "python": "==3.6"
+      }
     }
-  ],
-  "constraints": {
-    "python": "==3.6"
-  }
+  ]
 }
