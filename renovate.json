@@ -1,0 +1,27 @@
+{
+  "extends": [
+    "config:recommended"
+  ],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "matchStrings": [
+        "^\\s*(?<currentValue>.*)\\s*$"
+      ],
+      "packageNameTemplate": "regex",
+      "datasourceTemplate": "pypi",
+      "fileMatch": [
+        "regex-version.txt"
+      ]
+    }
+  ],
+  "packageRules": [
+    {
+      "matchFileNames": ["regex-version.txt"],
+      "constraintsFiltering": "strict"
+    }
+  ],
+  "constraints": {
+    "python": "==3.6"
+  }
+}
