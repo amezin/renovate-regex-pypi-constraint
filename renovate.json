@@ -20,7 +20,7 @@
       "matchFileNames": ["regex-version.txt"],
       "constraintsFiltering": "strict",
       "constraints": {
-        "python": "==3.6"
+        "python": "=3.14.7"
       }
     }
   ]
